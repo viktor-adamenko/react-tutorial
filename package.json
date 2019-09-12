@@ -4,8 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --open",
-    "build": "webpack --mode development"
+    "dev": "webpack-dev-server --inline --hot --open --mode development",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,8 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
