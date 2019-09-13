@@ -4,14 +4,6 @@ import todosData from '../data/todosData';
 
 class TodoList extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-            todos: todosData
-        };
-        this.handleChange = this.handleChange.bind(this);
-    }
-
     handleChange(id) {
         
         this.setState(prevState => {
@@ -30,7 +22,7 @@ class TodoList extends React.Component {
 
     render() {    
 
-        const listItems = this.state.todos.map(i => { return <TodoItem key={i.id} item={i} handleChange={this.handleChange}/>});
+    const listItems = todosData.map(i => { return <TodoItem key={i.id} item={i} /> });
 
         return (
             <div className="todo-list">
