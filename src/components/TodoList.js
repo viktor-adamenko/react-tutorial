@@ -25,7 +25,6 @@ class TodoList extends React.Component {
 
             return updatedTodos;
         });
-
     }
 
     render() {    
